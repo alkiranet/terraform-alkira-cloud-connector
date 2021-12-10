@@ -1,4 +1,4 @@
-output "id" {
+output "connector_id" {
   description = "AWS Connector ID"
   value       = alkira_connector_aws_vpc.connector.id
 }
@@ -13,7 +13,7 @@ output "size" {
   value       = alkira_connector_aws_vpc.connector.size
 }
 
-output "segment" {
+output "segment_id" {
   description = "AWS Connector segment"
   value       = alkira_connector_aws_vpc.connector.segment_id
 }
@@ -23,7 +23,7 @@ output "group" {
   value       = alkira_connector_aws_vpc.connector.group
 }
 
-output "billing_tag" {
+output "billing_tag_id" {
   description = "AWS Connector billing tag"
   value       = alkira_connector_aws_vpc.connector.billing_tag_ids
 }

@@ -1,6 +1,7 @@
 variable "aws_vpc" {
   description = "Name of the AWS VPC to be onboarded; Also used for AWS Connector name"
   type        = string
+  default     = ""
 }
 
 variable "cxp" {

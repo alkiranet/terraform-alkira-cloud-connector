@@ -92,7 +92,7 @@ resource "alkira_connector_aws_vpc" "connector" {
     # Does custom bool exist? If not, default
     content {
       id              = data.aws_vpc.selected.main_route_table_id
-      options         = var.is_subnet ? "ADVERTISE_CUSTOM_PREFIX" : "ADVERTISE_DEFAULT_ROUTE"
+      options         = var.is_custom ? "ADVERTISE_CUSTOM_PREFIX" : "ADVERTISE_DEFAULT_ROUTE"
       prefix_list_ids = try([vpc_route_table.value.id])
     }
   }

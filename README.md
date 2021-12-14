@@ -52,7 +52,7 @@ module "onboard_aws_vpc" {
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_vpc"></a> [aws\_vpc](#input\_aws\_vpc) | Name of the AWS VPC to be onboarded; Also used for AWS Connector name | `string` | `""` | no |
 | <a name="input_billing_tag"></a> [billing\_tag](#input\_billing\_tag) | Alkira billing tag applied to connector | `string` | n/a | yes |
-| <a name="input_credential"></a> [credential](#input\_credential) | Alkira credentail used for AWS authentication | `string` | n/a | yes |
+| <a name="input_credential"></a> [credential](#input\_credential) | Alkira credential used for AWS authentication | `string` | n/a | yes |
 | <a name="input_custom_prefixes"></a> [custom\_prefixes](#input\_custom\_prefixes) | List of custom prefix-lists for routing (prefix-lists must already exist in Alkira CSX) | `list(string)` | `[]` | no |
 | <a name="input_cxp"></a> [cxp](#input\_cxp) | Alkira CXP to create connector in | `string` | n/a | yes |
 | <a name="input_group"></a> [group](#input\_group) | Alkira Group to add connector to | `string` | n/a | yes |

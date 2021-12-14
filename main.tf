@@ -30,8 +30,8 @@ module "onboard_aws_vpc" {
   count = length(var.aws_vpc) > 0 ? 1 : 0
 
   # Some conditions
-  is_subnet       = length(var.onboard_subnets) > 0 ? true : false
-  onboard_subnets = var.onboard_subnets
+  is_subnet = length(var.onboard_subnets) > 0 ? true : false
+  is_custom = length(var.custom_prefixes) > 0 ? true : false
 
   # AWS values
   aws_vpc = var.aws_vpc
@@ -39,6 +39,7 @@ module "onboard_aws_vpc" {
   # Alkira values
   cxp             = var.cxp
   size            = var.size
+  onboard_subnets = var.onboard_subnets
   custom_prefixes = var.custom_prefixes
   group           = data.alkira_group.group.id
   segment_id      = data.alkira_segment.segment.id

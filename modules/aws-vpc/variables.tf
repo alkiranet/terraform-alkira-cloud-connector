@@ -11,6 +11,12 @@ variable "is_subnet" {
   default     = false
 }
 
+variable "is_custom" {
+  description = "Controls if custom prefixes are used for routing from cloud network to CXP; This value automatically changes to 'true' if custom_prefixes list is set"
+  type        = bool
+  default     = false
+}
+
 variable "aws_vpc" {
   description = "Name of the AWS VPC to be onboarded; Also used for AWS Connector name"
   type        = string
@@ -33,7 +39,7 @@ variable "billing_tag_id" {
 }
 
 variable "credential_id" {
-  description = "ID of Alkira credentail used for AWS authentication"
+  description = "ID of Alkira credential used for AWS authentication"
   type        = string
 }
 

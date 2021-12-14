@@ -21,7 +21,7 @@ variable "billing_tag" {
 }
 
 variable "credential" {
-  description = "Alkira credentail used for AWS authentication"
+  description = "Alkira credential used for AWS authentication"
   type        = string
 }
 

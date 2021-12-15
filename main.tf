@@ -41,7 +41,7 @@ module "onboard_aws_vpc" {
   size            = var.size
   onboard_subnets = var.onboard_subnets
   custom_prefixes = var.custom_prefixes
-  group           = data.alkira_group.group.id
+  group           = data.alkira_group.group.name
   segment_id      = data.alkira_segment.segment.id
   billing_tag_id  = data.alkira_billing_tag.tag.id
   credential_id   = data.alkira_credential.credential.id

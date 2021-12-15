@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.0.1...v1.0.2) (2021-12-15)
+
+
+### Bug Fixes
+
+* Root module input for Alkira group ([68b38b1](https://github.com/alkiranet/terraform-alkira-cloud-connector/commit/68b38b1b366616fe677cc5a8530dcd67a49b9742))
+
 ## [1.0.1](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.0.0...v1.0.1) (2021-12-14)
 
 

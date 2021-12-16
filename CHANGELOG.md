@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.1.0](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.0.2...v1.1.0) (2021-12-16)
+
+
+### Features
+
+* Onboard Azure VNet ([3104db1](https://github.com/alkiranet/terraform-alkira-cloud-connector/commit/3104db1fad1e0731ea8141282d5a2f7f6acf9f6f))
+
 ## [1.0.2](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.0.1...v1.0.2) (2021-12-15)
 
 

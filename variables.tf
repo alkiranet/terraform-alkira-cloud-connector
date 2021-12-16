@@ -4,6 +4,18 @@ variable "aws_vpc" {
   default     = ""
 }
 
+variable "azure_vnet" {
+  description = "Name of the Azure VNet to be onboarded; Also used for Azure Connector name"
+  type        = string
+  default     = ""
+}
+
+variable "resource_group" {
+  description = "Name of the Azure VNet to be onboarded; Also used for Azure Connector name"
+  type        = string
+  default     = ""
+}
+
 variable "cxp" {
   description = "Alkira CXP to create connector in"
   type        = string

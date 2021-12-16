@@ -36,6 +36,7 @@ module "onboard_aws_vpc" {
 | Name | Source | Version |
 |------|--------|---------|
 | <a name="module_onboard_aws_vpc"></a> [onboard\_aws\_vpc](#module\_onboard\_aws\_vpc) | ./modules/aws-vpc | n/a |
+| <a name="module_onboard_azure_vnet"></a> [onboard\_azure\_vnet](#module\_onboard\_azure\_vnet) | ./modules/azure-vnet | n/a |
 
 ## Resources
 
@@ -51,12 +52,14 @@ module "onboard_aws_vpc" {
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_vpc"></a> [aws\_vpc](#input\_aws\_vpc) | Name of the AWS VPC to be onboarded; Also used for AWS Connector name | `string` | `""` | no |
+| <a name="input_azure_vnet"></a> [azure\_vnet](#input\_azure\_vnet) | Name of the Azure VNet to be onboarded; Also used for Azure Connector name | `string` | `""` | no |
 | <a name="input_billing_tag"></a> [billing\_tag](#input\_billing\_tag) | Alkira billing tag applied to connector | `string` | n/a | yes |
 | <a name="input_credential"></a> [credential](#input\_credential) | Alkira credential used for AWS authentication | `string` | n/a | yes |
 | <a name="input_custom_prefixes"></a> [custom\_prefixes](#input\_custom\_prefixes) | List of custom prefix-lists for routing (prefix-lists must already exist in Alkira CSX) | `list(string)` | `[]` | no |
 | <a name="input_cxp"></a> [cxp](#input\_cxp) | Alkira CXP to create connector in | `string` | n/a | yes |
 | <a name="input_group"></a> [group](#input\_group) | Alkira Group to add connector to | `string` | n/a | yes |
 | <a name="input_onboard_subnets"></a> [onboard\_subnets](#input\_onboard\_subnets) | List of subnet names to onboard in lieu of entire network | `list(string)` | `[]` | no |
+| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | Name of the Azure VNet to be onboarded; Also used for Azure Connector name | `string` | `""` | no |
 | <a name="input_segment"></a> [segment](#input\_segment) | Alkira segment to add connector to | `string` | n/a | yes |
 | <a name="input_size"></a> [size](#input\_size) | Alkira connector size | `string` | `"SMALL"` | no |
 
@@ -64,5 +67,6 @@ module "onboard_aws_vpc" {
 
 | Name | Description |
 |------|-------------|
-| <a name="output_aws_connector"></a> [aws\_connector](#output\_aws\_connector) | The Alkira AWS Connector resource being created |
+| <a name="output_aws_connector"></a> [aws\_connector](#output\_aws\_connector) | AWS Connector resource being created |
+| <a name="output_azure_connector"></a> [azure\_connector](#output\_azure\_connector) | Azure Connector resource being created |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

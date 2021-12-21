@@ -54,7 +54,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_billing_tag_id"></a> [billing\_tag\_id](#output\_billing\_tag\_id) | AWS Connector billing tag |
-| <a name="output_connector_id"></a> [connector\_id](#output\_connector\_id) | AWS Connector ID |
 | <a name="output_cxp"></a> [cxp](#output\_cxp) | AWS Connector CXP |
 | <a name="output_group"></a> [group](#output\_group) | AWS Connector group |
 | <a name="output_segment_id"></a> [segment\_id](#output\_segment\_id) | AWS Connector segment |

@@ -75,3 +75,28 @@ module "onboard_azure_vnet" {
   credential_id   = data.alkira_credential.credential.id
 
 }
+
+/*
+Onboard GCP VPC to Alkira CXP
+https://registry.terraform.io/providers/alkiranet/alkira/latest/docs/resources/connector_gcp_vpc
+*/
+module "onboard_gcp_vpc" {
+  source = "./modules/gcp-vpc"
+
+  # If value exists, set true
+  count = length(var.gcp_vpc) > 0 ? 1 : 0
+
+  # GCP values
+  gcp_vpc      = var.gcp_vpc
+  project      = var.project
+  cloud_region = var.cloud_region
+
+  # Alkira values
+  cxp            = var.cxp
+  size           = var.size
+  group          = data.alkira_group.group.name
+  segment_id     = data.alkira_segment.segment.id
+  billing_tag_id = data.alkira_billing_tag.tag.id
+  credential_id  = data.alkira_credential.credential.id
+
+}

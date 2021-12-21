@@ -10,6 +10,24 @@ variable "azure_vnet" {
   default     = ""
 }
 
+variable "gcp_vpc" {
+  description = "Name of the GCP VPC to be onboarded; Also used for GCP Connector name"
+  type        = string
+  default     = ""
+}
+
+variable "cloud_region" {
+  description = "Name of the cloud region to use for onboarding"
+  type        = string
+  default     = ""
+}
+
+variable "project" {
+  description = "Name of the GCP project"
+  type        = string
+  default     = ""
+}
+
 variable "resource_group" {
   description = "Name of the Azure VNet to be onboarded; Also used for Azure Connector name"
   type        = string

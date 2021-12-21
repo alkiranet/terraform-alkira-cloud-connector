@@ -1,8 +1,3 @@
-output "connector_id" {
-  description = "AWS Connector ID"
-  value       = alkira_connector_aws_vpc.connector.id
-}
-
 output "cxp" {
   description = "AWS Connector CXP"
   value       = alkira_connector_aws_vpc.connector.cxp

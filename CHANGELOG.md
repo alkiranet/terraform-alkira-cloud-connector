@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.2.0](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.1.0...v1.2.0) (2021-12-21)
+
+
+### Features
+
+* Onboard GCP VPC ([e9dff02](https://github.com/alkiranet/terraform-alkira-cloud-connector/commit/e9dff02f9b2082ce1a909e403196dffbda779def))
+
 # [1.1.0](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.0.2...v1.1.0) (2021-12-16)
 
 

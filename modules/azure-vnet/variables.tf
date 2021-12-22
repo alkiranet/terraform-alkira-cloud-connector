@@ -4,6 +4,18 @@ variable "is_custom" {
   default     = false
 }
 
+variable "is_sub" {
+  description = "Controls if subscription ID is passed in or referenced in Alkira credential; Default uses Alkira credential"
+  type        = bool
+  default     = false
+}
+
+variable "subscription_id" {
+  description = "Azure subscription ID"
+  type        = string
+  default     = ""
+}
+
 variable "resource_group" {
   description = "Name of Azure Resource Group"
   type        = string

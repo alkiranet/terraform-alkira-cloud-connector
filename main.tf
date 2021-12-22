@@ -59,6 +59,7 @@ module "onboard_azure_vnet" {
   count = length(var.azure_vnet) > 0 ? 1 : 0
 
   # Some conditions
+  is_sub    = length(var.subscription_id) > 0 ? true : false
   is_custom = length(var.custom_prefixes) > 0 ? true : false
 
   # Azure values
@@ -68,6 +69,7 @@ module "onboard_azure_vnet" {
   # Alkira values
   cxp             = var.cxp
   size            = var.size
+  subscription_id = var.subscription_id
   custom_prefixes = var.custom_prefixes
   group           = data.alkira_group.group.name
   segment_id      = data.alkira_segment.segment.id

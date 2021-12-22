@@ -28,6 +28,12 @@ variable "project" {
   default     = ""
 }
 
+variable "subscription_id" {
+  description = "Azure subscription ID"
+  type        = string
+  default     = ""
+}
+
 variable "resource_group" {
   description = "Name of the Azure VNet to be onboarded; Also used for Azure Connector name"
   type        = string

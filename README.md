@@ -23,13 +23,13 @@ module "onboard_aws_vpc" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_alkira"></a> [alkira](#requirement\_alkira) | >= 0.7.0 |
+| <a name="requirement_alkira"></a> [alkira](#requirement\_alkira) | >= 0.7.4 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alkira"></a> [alkira](#provider\_alkira) | >= 0.7.0 |
+| <a name="provider_alkira"></a> [alkira](#provider\_alkira) | >= 0.7.4 |
 
 ## Modules
 
@@ -66,6 +66,7 @@ module "onboard_aws_vpc" {
 | <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | Name of the Azure VNet to be onboarded; Also used for Azure Connector name | `string` | `""` | no |
 | <a name="input_segment"></a> [segment](#input\_segment) | Alkira segment to add connector to | `string` | n/a | yes |
 | <a name="input_size"></a> [size](#input\_size) | Alkira connector size | `string` | `"SMALL"` | no |
+| <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | Azure subscription ID | `string` | `""` | no |
 
 ## Outputs
 

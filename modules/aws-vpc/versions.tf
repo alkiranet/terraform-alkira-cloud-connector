@@ -5,7 +5,7 @@ terraform {
 
     alkira = {
       source  = "alkiranet/alkira"
-      version = ">= 0.7.0"
+      version = ">= 0.7.4"
     }
 
     aws = {

@@ -19,9 +19,10 @@ data "alkira_policy_prefix_list" "prefix" {
 resource "alkira_connector_azure_vnet" "connector" {
 
   # Azure values
-  name          = var.azure_vnet
-  azure_vnet_id = data.azurerm_virtual_network.azure_vnet.id
-  azure_region  = data.azurerm_virtual_network.azure_vnet.location
+  name                  = var.azure_vnet
+  azure_vnet_id         = data.azurerm_virtual_network.azure_vnet.id
+  azure_region          = data.azurerm_virtual_network.azure_vnet.location
+  azure_subscription_id = var.is_sub ? var.subscription_id : null
 
   # CXP values
   cxp             = var.cxp

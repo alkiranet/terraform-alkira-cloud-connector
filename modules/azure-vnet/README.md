@@ -6,14 +6,14 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12.29 |
-| <a name="requirement_alkira"></a> [alkira](#requirement\_alkira) | >= 0.7.0 |
+| <a name="requirement_alkira"></a> [alkira](#requirement\_alkira) | >= 0.7.4 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | >= 2.46.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alkira"></a> [alkira](#provider\_alkira) | >= 0.7.0 |
+| <a name="provider_alkira"></a> [alkira](#provider\_alkira) | >= 0.7.4 |
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | >= 2.46.0 |
 
 ## Modules
@@ -39,9 +39,11 @@ No modules.
 | <a name="input_cxp"></a> [cxp](#input\_cxp) | Alkira CXP to create connector in | `string` | n/a | yes |
 | <a name="input_group"></a> [group](#input\_group) | Name of Alkira group to add connector to | `string` | n/a | yes |
 | <a name="input_is_custom"></a> [is\_custom](#input\_is\_custom) | Controls if custom prefixes are used for routing from cloud network to CXP; This value automatically changes to 'true' if custom\_prefixes list is set | `bool` | `false` | no |
+| <a name="input_is_sub"></a> [is\_sub](#input\_is\_sub) | Controls if subscription ID is passed in or referenced in Alkira credential; Default uses Alkira credential | `bool` | `false` | no |
 | <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | Name of Azure Resource Group | `string` | n/a | yes |
 | <a name="input_segment_id"></a> [segment\_id](#input\_segment\_id) | ID of Alkira segment to add connector to | `string` | n/a | yes |
 | <a name="input_size"></a> [size](#input\_size) | Size of Alkira connector; SMALL, MEDIUM, LARGE | `string` | `"SMALL"` | no |
+| <a name="input_subscription_id"></a> [subscription\_id](#input\_subscription\_id) | Azure subscription ID | `string` | `""` | no |
 
 ## Outputs
 

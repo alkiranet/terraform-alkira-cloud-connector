@@ -16,8 +16,20 @@ variable "gcp_vpc" {
   default     = ""
 }
 
+variable "oci_vcn" {
+  description = "Name of the OCI VCN to be onboarded; Also used for OCI Connector name"
+  type        = string
+  default     = ""
+}
+
 variable "cloud_region" {
   description = "Name of the cloud region to use for onboarding"
+  type        = string
+  default     = ""
+}
+
+variable "compartment_id" {
+  description = "OCI compartment ID"
   type        = string
   default     = ""
 }

@@ -102,3 +102,26 @@ module "onboard_gcp_vpc" {
   credential_id  = data.alkira_credential.credential.id
 
 }
+
+module "onboard_oci_vcn" {
+  source = "./modules/oci-vcn"
+
+  # If value exists, set true
+  count = length(var.oci_vcn) > 0 ? 1 : 0
+
+  # OCI values
+  oci_vcn        = var.oci_vcn
+  compartment_id = var.compartment_id
+  cloud_region   = var.cloud_region
+  is_custom      = length(var.custom_prefixes) > 0 ? true : false
+
+  # Alkira values
+  cxp             = var.cxp
+  size            = var.size
+  custom_prefixes = var.custom_prefixes
+  group           = data.alkira_group.group.name
+  segment_id      = data.alkira_segment.segment.id
+  billing_tag_id  = data.alkira_billing_tag.tag.id
+  credential_id   = data.alkira_credential.credential.id
+
+}

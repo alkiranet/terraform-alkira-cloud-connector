@@ -12,3 +12,8 @@ output "gcp_connector" {
   description = "The GCP Connector resource being created"
   value       = module.onboard_gcp_vpc
 }
+
+output "oci_connector" {
+  description = "The OCI Connector resource being created"
+  value       = module.onboard_oci_vcn
+}

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.3.0](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.2.1...v1.3.0) (2022-01-13)
+
+
+### Features
+
+* Onboard OCI VCN ([e6449ec](https://github.com/alkiranet/terraform-alkira-cloud-connector/commit/e6449ec52e2b592796d899fe46b446580ba62a8c))
+
 # [1.2.0](https://github.com/alkiranet/terraform-alkira-cloud-connector/compare/v1.1.0...v1.2.0) (2021-12-21)
 
 

@@ -17,12 +17,12 @@ data "alkira_policy_prefix_list" "prefix" {
 resource "alkira_connector_oci_vcn" "connector" {
 
   # OCI values
-  name            = var.oci_vcn
-  enabled         = var.is_enabled
-  primary         = var.is_primary
-  oci_region      = var.cloud_region
-  vcn_id          = one(data.oci_core_vcns.selected.virtual_networks[*].id)
-  vcn_cidr        = [one(data.oci_core_vcns.selected.virtual_networks[*].cidr_block)]
+  name       = var.oci_vcn
+  enabled    = var.is_enabled
+  primary    = var.is_primary
+  oci_region = var.cloud_region
+  vcn_id     = one(data.oci_core_vcns.selected.virtual_networks[*].id)
+  vcn_cidr   = [one(data.oci_core_vcns.selected.virtual_networks[*].cidr_block)]
 
   # Alkira values
   cxp             = var.cxp
